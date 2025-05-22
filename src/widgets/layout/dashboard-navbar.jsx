@@ -120,7 +120,7 @@ export function DashboardNavbar() {
                     color="blue-gray"
                     className="mb-1 font-normal"
                   >
-                    <strong>New message</strong> from Laur
+                    <strong>New message</strong> from Khan
                   </Typography>
                   <Typography
                     variant="small"
@@ -144,7 +144,7 @@ export function DashboardNavbar() {
                     color="blue-gray"
                     className="mb-1 font-normal"
                   >
-                    <strong>New album</strong> by Travis Scott
+                    <strong>New album</strong> by Sajawal
                   </Typography>
                   <Typography
                     variant="small"

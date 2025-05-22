@@ -14,6 +14,7 @@ export function Footer({ brandName, brandLink, routes }) {
           <a
             href={brandLink}
             target="_blank"
+            rel="noopener noreferrer"
             className="transition-colors hover:text-blue-500 font-bold"
           >
             {brandName}
@@ -27,6 +28,7 @@ export function Footer({ brandName, brandLink, routes }) {
                 as="a"
                 href={path}
                 target="_blank"
+                rel="noopener noreferrer"
                 variant="small"
                 className="py-0.5 px-1 font-normal text-inherit transition-colors hover:text-blue-500"
               >
@@ -41,20 +43,25 @@ export function Footer({ brandName, brandLink, routes }) {
 }
 
 Footer.defaultProps = {
-  brandName: "Creative Tim",
-  brandLink: "https://www.creative-tim.com",
+  brandName: "Adeel's Dashboard",
+  brandLink: "https://example.com",
   routes: [
-    { name: "Creative Tim", path: "https://www.creative-tim.com" },
-    { name: "About Us", path: "https://www.creative-tim.com/presentation" },
-    { name: "Blog", path: "https://www.creative-tim.com/blog" },
-    { name: "License", path: "https://www.creative-tim.com/license" },
+    { name: "Home", path: "https://example.com/home" },
+    { name: "About Me", path: "https://example.com/about" },
+    { name: "Projects", path: "https://example.com/projects" },
+    { name: "Contact", path: "https://example.com/contact" },
   ],
 };
 
 Footer.propTypes = {
   brandName: PropTypes.string,
   brandLink: PropTypes.string,
-  routes: PropTypes.arrayOf(PropTypes.object),
+  routes: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      path: PropTypes.string.isRequired,
+    })
+  ),
 };
 
 Footer.displayName = "/src/widgets/layout/footer.jsx";

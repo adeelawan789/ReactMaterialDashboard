@@ -1,28 +1,28 @@
 export const conversationsData = [
   {
     img: "/img/team-1.jpeg",
-    name: "Sophie B.",
-    message: "Hi! I need more information...",
+    name: "Sana Ahmed",
+    message: "Hey, just wanted to confirm our meeting time.",
   },
   {
     img: "/img/team-2.jpeg",
-    name: "Alexander",
-    message: "Awesome work, can you...",
+    name: " Khan",
+    message: "Great job on the dashboard update!",
   },
   {
     img: "/img/team-3.jpeg",
-    name: "Ivanna",
-    message: "About files I can...",
+    name: "Sara Sheikh",
+    message: "Can you review the UI changes?",
   },
   {
     img: "/img/team-4.jpeg",
-    name: "Peterson",
-    message: "Have a great afternoon...",
+    name: "Bilal Yousaf",
+    message: "Pushed the latest code to GitHub.",
   },
   {
     img: "/img/bruce-mars.jpeg",
-    name: "Bruce Mars",
-    message: "Hi! I need more information...",
+    name: "Adeel",
+    message: "Let me know if you need design assets.",
   },
 ];
 
